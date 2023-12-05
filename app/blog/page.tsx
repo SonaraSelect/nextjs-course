@@ -22,7 +22,7 @@ export default async function Blog() {
       <ul>
         {posts.map((post: any) => (
           <li key={post.id}>
-            <div className='flex flex-row'>
+            <div>
               <Link href={`/blog/${post.id}`}>{post.title}</Link>
               
               &nbsp; --- &nbsp; by {post.author}
