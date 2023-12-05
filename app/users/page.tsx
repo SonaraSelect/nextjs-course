@@ -4,7 +4,7 @@ import { prisma } from '@/lib/prisma';
 
 export default async function Users() {
   const users = await prisma.user.findMany();
-
+  console.log('userpage')
   return (
     <div className={styles.grid}>
       {users.map((user) => {

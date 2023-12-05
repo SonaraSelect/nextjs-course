@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function Blog() {
+  console.log('aboutpage')
   return (
     <div>
       <h1>About us</h1>

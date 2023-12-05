@@ -7,5 +7,6 @@ type Props = {
 };
 
 export default function AuthProvider({ children }: Props) {
+  console.log('authprov')
   return <SessionProvider>{children}</SessionProvider>;
 }

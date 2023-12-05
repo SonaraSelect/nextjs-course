@@ -1,7 +1,7 @@
 'use client';
 
 export function ProfileForm({ user }: any) {
-
+  console.log('postform')
   const updateUser = async (e: React.FormEvent<HTMLFormElement>) => {
     
     e.preventDefault();

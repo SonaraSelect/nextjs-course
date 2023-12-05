@@ -37,6 +37,7 @@ function xxSubmitForm() {
     */ 
 
     const submitPost = () => { console.log('hi')};
+    console.log('submitform')
     return(
         <div>
             <h1>Submit a post</h1>

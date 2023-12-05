@@ -16,6 +16,7 @@ interface Props {
 }
 
 export default function RootLayout({ children }: Props) {
+  console.log('navbar')
   return (
     <AuthProvider>
       <html lang="en">

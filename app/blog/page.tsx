@@ -10,7 +10,7 @@ export default async function Blog() {
   console.log('hello');
   console.log(posts);
   console.log('now original');
-
+  console.log('blogpage')
 
   const click = () => {
     console.log('hi')

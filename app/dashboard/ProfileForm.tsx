@@ -8,7 +8,7 @@ export function ProfileForm({ user }: any) {
     
     const formData = new FormData(e.currentTarget);
 
-    
+    console.log('profileform')
 
     const body = {
       name: formData.get('name'),

@@ -5,6 +5,7 @@ import { SignInButton, SignOutButton } from '../components/buttons';
 import AuthCheck from '@/components/AuthCheck';
 
 export default function NavMenu() {
+  console.log('navemenu')
   return (
     <nav className={styles.nav}>
       <Link href={'/'}>

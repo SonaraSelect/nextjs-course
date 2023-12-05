@@ -17,6 +17,7 @@ interface Props {
 
 export default async function BlogPostPage({ params }: Props) {
   // deduped
+  console.log('idpage')
   const posts: Post[] = await fetch('http://localhost:3000/api/contentpost').then(
     (res) => res.json()
   );

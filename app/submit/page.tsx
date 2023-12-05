@@ -8,7 +8,7 @@ import { ProfileForm } from "../dashboard/ProfileForm";
 import { SignOutButton } from "@/components/buttons";
 
 export default async function page() {
-    
+    console.log('submitpage')
     const session = await getServerSession(authOptions);
 
     if(!session) {

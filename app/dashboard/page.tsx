@@ -8,7 +8,7 @@ import { authOptions } from "../api/auth/[...nextauth]/route"
 
 export default async function Dashboard() {
   const session = await getServerSession(authOptions);
-
+  console.log('dashpage')
   if (!session) {
     redirect('/api/auth/signin');
   }

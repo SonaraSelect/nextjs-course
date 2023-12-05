@@ -1,5 +1,7 @@
 export default function Home() {
 
+  console.log('home page')
+
   return (
     <div>
       <h1>Welcome to NextSpace!</h1>
