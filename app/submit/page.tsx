@@ -6,7 +6,6 @@ import { prisma } from '@/lib/prisma';
 import { SubmitForm } from "./SubmitForm"
 import { ProfileForm } from "../dashboard/ProfileForm";
 import { SignOutButton } from "@/components/buttons";
-import { DummyProfileForm } from "./DummyProfileForm";
 
 export default async function page() {
     

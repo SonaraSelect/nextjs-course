@@ -21,7 +21,7 @@ export default async function BlogPostPage({ params }: Props) {
   );
   const post = posts.find((post) => post.id === params.id)!;
 
-  // Find user
+  // Find user by email (authorid)
   const user = await prisma.user
     .findUnique({ where: { email: post.authorid } });
 
