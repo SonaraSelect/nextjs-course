@@ -16,7 +16,7 @@ export default async function Blog() {
             <div className='flex flex-row'>
               <Link href={`/blog/${post.id}`}>{post.title}</Link>
               
-              &nbsp; --- &nbsp; by {post.author}
+              by {post.author}
               
             </div>
             
@@ -26,3 +26,5 @@ export default async function Blog() {
     </div>
   );
 }
+
+// &nbsp; --- &nbsp; 
