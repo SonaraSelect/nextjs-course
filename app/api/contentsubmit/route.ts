@@ -3,15 +3,31 @@ import { getServerSession } from 'next-auth';
 import { prisma } from '@/lib/prisma';
 import { authOptions } from "../auth/[...nextauth]/route"
 
+interface Data {
+    title: string,
+    id: string,
+    author: string,
+    content: string,
+    authorid: string,
+}
+
 export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
   const currentUserEmail = session?.user?.email!;
 
-  const data = await req.json();
+  const data: Data = await req.json();
 
-  const post = await prisma.posts.create(data);
+  const post = await prisma.posts.create({
+    data: {
+        title: data.title,
+        id: data.id,
+        author: data.author,
+        content: data.content,
+        authorid: data.authorid,
+    }
+  });
 
-  return NextResponse.json(user);
+  return NextResponse.json(post );
 }
 
 

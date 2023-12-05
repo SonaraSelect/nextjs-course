@@ -8,6 +8,8 @@ export function ProfileForm({ user }: any) {
     
     const formData = new FormData(e.currentTarget);
 
+    
+
     const body = {
       name: formData.get('name'),
       bio: formData.get('bio'),

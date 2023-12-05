@@ -67,8 +67,9 @@ model VerificationToken {
 }
 
 model Posts {
-  title   String
-  id      String  @unique
-  author  String
-  content String
+  title    String
+  id       String  @unique
+  author   String
+  content  String
+  authorid String
 }
