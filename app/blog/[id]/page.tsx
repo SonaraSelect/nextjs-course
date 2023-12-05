@@ -8,6 +8,7 @@ interface Post {
   content: string;
   id: string;
   author: string;
+  authorid: string;
 }
 
 interface Props {
