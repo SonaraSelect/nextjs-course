@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+export const revalidate = 800;
+
 export default async function Blog() {
   const posts = await fetch('http://localhost:3000/api/contentpost').then((res) =>
     res.json()
