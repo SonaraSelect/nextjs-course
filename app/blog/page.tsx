@@ -10,7 +10,7 @@ export default async function Blog() {
   console.log('hello');
   console.log(posts);
   console.log('now original');
-  console.log('blogpage')
+  console.log('aa')
 
   const click = () => {
     console.log('hi')
@@ -21,11 +21,11 @@ export default async function Blog() {
       <h1>Welcome to our Blog</h1>
       <ul>
         {posts.map((post: any) => (
-          <li key={post.id}>
-            <div>
-              <Link href={`/blog/${post.id}`}>{post.title}</Link>
+          <li key={post?.id}>
+            <div className='flex flex-row'>
+              <Link href={`/blog/${post?.id}`}>{post?.title}</Link>
               
-              &nbsp; --- &nbsp; by {post.author}
+              &nbsp; --- &nbsp; by {post?.author}
               
             </div>
             
