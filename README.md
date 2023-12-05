@@ -1,6 +1,7 @@
-# Next.js Full Course Demo
+## Welcome to my project!
 
-This repo contains the project code for the [Full Next.js App Router Course](https://fireship.io/courses/nextjs)
+This project was adapted from fireship's next.js starter course. However,
+the user submittable blogs feature is entirely by my own design.
 
 ## Setup
 
@@ -10,7 +11,5 @@ cd nextcourse
 npm install
 ```
 
-- Rename the `.env.example` file to `.env` and update env variables (explained in detail in the course).
-- I am using a free [NeonDB](https://neon.tech) Postgres database, but any Prisma compatible DB will work. 
-
+Env variables are as follows, in case production does not work. If errors happen during the first `npm run dev`, then
 
