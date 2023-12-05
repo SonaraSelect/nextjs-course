@@ -7,11 +7,6 @@ export default async function Blog() {
     res.json()
   );
 
-
-  const click = () => {
-    console.log('hi')
-  }
-
   return (
     <div>
       <h1>Welcome to our Blog</h1>
