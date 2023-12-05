@@ -2,6 +2,12 @@ import { NextResponse } from 'next/server';
 
 const posts = [
   {
+    title: 'Good morning LA',
+    slug: 'hello-everyone',
+    content:
+      'I hope everyone is splendid today',
+  },
+  {
     title: 'Lorem Ipsum',
     slug: 'lorem-ipsum',
     content:

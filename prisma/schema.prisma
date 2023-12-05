@@ -65,3 +65,10 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+model Posts {
+  title   String
+  id      String  @unique
+  author  String
+  content String
+}
