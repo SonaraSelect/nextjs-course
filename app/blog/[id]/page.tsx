@@ -23,14 +23,14 @@ export default async function BlogPostPage({ params }: Props) {
 
   // Find user
   const user = await prisma.user
-    .findUnique({ where: { email: post.authorid } })
-    //.then((user) => user?.name!);
+    .findUnique({ where: { email: post.authorid } });
 
-  const test = await prisma.user.findUnique
+  const userLink = '/users/' + user?.id;
+  
   return (
     <div>
       <h1>{post.title}</h1>
-      <h2>Posted by <Link href="/user/${user?.id!}">{user?.name}</Link></h2>
+      <h2>Posted by <Link href={userLink}>{user?.name}</Link></h2>
       <p>{post.content}</p>
     </div>
   );

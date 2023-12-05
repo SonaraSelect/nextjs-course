@@ -13,7 +13,9 @@ export default async function page() {
     const session = await getServerSession(authOptions);
 
     if(!session) {
-        redirect('api/auth/signin');
+        return (
+            <h1>Sign in to post!</h1>
+        )
     }
 
     const currentUserEmail = session?.user?.email!;
