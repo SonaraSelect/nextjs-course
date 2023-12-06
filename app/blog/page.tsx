@@ -1,11 +1,11 @@
+import { prisma } from '@/lib/prisma';
 import Link from 'next/link';
 
 export const revalidate = 800;
 
 export default async function Blog() {
-  const posts = await fetch('/api/contentpost').then((res) =>
-    res.json()
-  );
+
+  const posts = await prisma.posts.findMany()
 
   return (
     <div>
@@ -16,7 +16,7 @@ export default async function Blog() {
             <div className='flex flex-row'>
               <Link href={`/blog/${post.id}`}>{post.title}</Link>
               
-              by {post.author}
+              &nbsp; --- &nbsp; by {post.author}
               
             </div>
             

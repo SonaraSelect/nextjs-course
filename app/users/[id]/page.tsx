@@ -1,5 +1,3 @@
-'use client';
-
 import FollowButton from '@/components/FollowButton/FollowButton';
 import { prisma } from '@/lib/prisma';
 import { Metadata } from 'next';

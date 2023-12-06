@@ -16,10 +16,8 @@ interface Props {
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  // deduped
-  const posts: Post[] = await fetch('/api/contentpost').then(
-    (res) => res.json()
-  );
+  
+  const posts = await prisma.posts.findMany();
   const post = posts.find((post) => post.id === params.id)!;
 
   // Find user by email (authorid)
