@@ -4,7 +4,6 @@ import { authOptions } from "../api/auth/[...nextauth]/route";
 import { prisma } from '@/lib/prisma';
 
 import { SubmitForm } from "./SubmitForm"
-import { ProfileForm } from "../dashboard/ProfileForm";
 import { SignOutButton } from "@/components/buttons";
 
 export default async function page() {
